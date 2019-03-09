@@ -1,2 +1,10 @@
 # IT-Lab
-IT Lab questions
+
+Admission Program:
+Write a Java program to manage the admission’s office at a Higher Secondary School. The School has 12 seats in total. Being one of the prestigious school in the area it will only take students with 10th Standard Marks at least 90%. The application consists of Student Name, Age, Parents Name, Name of the local Guardian if any, Percentage of Marks in 10th Standard Board Exam, the Board
+under which they have studied, School Name and Address where the student has completed the 10th Standard Studies, Name and address of at least two References.
+If there are more than 12 applicants which meets the required marks criteria the school will have to conduct an Entrance Examination for all such applicants. Once all the applicants have written the entrance examination, the school will publish the results. Your program should publish the entrance examination results in this format. Student Name, Parent’s Name, Percentage of Marks in 10th and Percentage of marks scored in the entrance exam. If the student was absent for the Entrance Exam the result should mention absent.
+The school will only consider students who has Entrance examination marks greater than 80%. If by any chance the number of students with the necessary entrance examination marks (80%) is less than 12, then a separate allotment (application will be invited again) has to be done for the remaining seats. After the entrance examination if the number of qualified students (i.e. students
+with marks more than 80% in entrance exam) is more than 12 all of them will be shortlisted for the interview.
+Interview will analyse four Skills of the students namely, Presentation, Knowledge, Language and Logical Reasoning. So marks are awarded equally for all these areas. Twelve Students with most marks in the Interview and Examination will be eligible for admission in the School. Admitted students should be allocated a roll number based on alphabetical order. As output the program
+should print all the details of the admitted students along with their roll numbers. The program should also keep details of all the students who applied results of the entrance examination, marks for each student in the interview etc. The program should display these details when asked by the user.
