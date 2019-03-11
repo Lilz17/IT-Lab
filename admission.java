@@ -14,14 +14,14 @@ class Application
                 System.out.print("Age: ");
                 age = sc1.nextInt();
                 System.out.print("Name of Parent: ");
-                Parent = sc1.nextLine();
+                Parent = sc1.nextLine();                                //printing next line w/o accepting input, sigh
                 System.out.print("Name of local Guardian, if any: ");
                 Guardian = sc1.nextLine();
                 System.out.print("% of marks in Class 10 Board Examination: ");
                 BoardPerc = sc1.nextDouble();
                 if(BoardPerc >= 90.00) selected++;
                 System.out.print("Name of Board: ");
-                BoardName = sc1.nextLine();
+                BoardName = sc1.nextLine();                             //another skipped input, tf is this
                 System.out.println("School Name and Address: ");
                 School = sc1.nextLine();
                 SchAddrL1 = sc1.nextLine();
@@ -43,23 +43,24 @@ class Application
 
         }
 }
-class q10                                               //HOW TO DYNAMICALLY CREATE ARRAY OF OBJECTS????
-{                                                       //Oh, try this: ArrayList<Object> arrL3 = new ArrayList<>();
+class q10
+{
         public static void main(String args[])
         {
                 Scanner sc = new Scanner(System.in);
-                int i = 1, s; char ch;
+                Application[] ap = new Application[500];
+                int i = 0, s, total; char ch;
                 do
                 {
-                        System.out.println("\n\n\t\tADMISSION FORM\n\nCandidate "+i);
+                        System.out.println("\n\n\t\tADMISSION FORM\n\nCandidate "+(i+1));
                         System.out.println("\nPlease enter the details accurately\n\n");
-                        Application ap = new Application();
-                        ap.read();
+                        ap[i] = new Application();
+                        ap[i].read();
                         System.out.print("\nPress 1 to continue, any other key to exit: ");
                         ch = sc.next().charAt(0);
                         i++;
                 }while(ch=='1');
-                s = Application.selected;
-                System.out.println(s+" students have been selected\n");
+                s = Application.selected; total = i;
+                System.out.println("\n"+s+" out of "+total+" students have been selected\n");
         }
 }
